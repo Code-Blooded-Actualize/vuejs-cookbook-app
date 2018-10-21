@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="/#/">Josh's Cookbook</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -19,19 +19,13 @@
               Dropdown
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-
-              <a class="dropdown-item" href="/#/">Home</a>
-              <a class="dropdown-item" href="/#/about">About</a>
-              <a class="dropdown-item" href="/#/test">Test</a>
-
               <router-link class="dropdown-item" to="/">Home</router-link>
               <router-link class="dropdown-item" to="/about">About</router-link>
               <router-link class="dropdown-item" to="/test">Test</router-link>
-
-
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
+              <router-link class="dropdown-item" to="/signup">Signup</router-link>
+              <router-link class="dropdown-item" to="/login">Login</router-link>
+              <router-link class="dropdown-item" to="/logout">Logout</router-link>
             </div>
           </li>
           <li class="nav-item">

@@ -1,12 +1,23 @@
 <template>
   <div class="recipes-show">
-    <h2>{{ recipe.title }}</h2>
+    <h1>{{ recipe.title }}</h1>
+    <h5>By: {{ recipe.chef }}</h5>
+    <h4>Prep Time: {{ recipe.formatted.prep_time }}</h4>
+
     <h4>Ingredients</h4>
     <ul>
       <li v-for="ingredient in recipe.formatted.ingredients">
         {{ingredient}}
       </li>
     </ul>
+    <h4>Directions</h4>
+    <ol>
+      <li v-for="direction in recipe.formatted.directions">
+        {{direction}}
+      </li>
+    </ol>
+
+    <img v-bind:src="recipe.image_url" v-bind:alt="recipe.name">
   </div>
 </template>
 
@@ -21,7 +32,9 @@ export default {
     return {
       recipe: {
         formatted: {
-          ingredients: []
+          ingredients: [],
+          directions: [],
+          prep_time: ""
         }
       }
     };
