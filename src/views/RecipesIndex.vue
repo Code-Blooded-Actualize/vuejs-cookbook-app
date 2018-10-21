@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="recipes-index">
     <div class="row">
       <div class="col-md-4" v-for="recipe in recipes">
         <div class="card" style="width: 18rem;">
@@ -12,6 +12,7 @@
                 <li v-for="ingredient in recipe.formatted.ingredients">{{ ingredient }}</li>
               </ul>
             </div>
+            <router-link class="btn btn-primary" v-bind:to="'/recipes/' + recipe.id">More Info</router-link>
           </div>
         </div>
       </div>
