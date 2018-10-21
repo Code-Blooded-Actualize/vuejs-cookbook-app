@@ -20,8 +20,7 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <router-link class="dropdown-item" to="/">Home</router-link>
-              <router-link class="dropdown-item" to="/about">About</router-link>
-              <router-link class="dropdown-item" to="/test">Test</router-link>
+              <router-link class="dropdown-item" to="/recipes/new">New Recipe</router-link>
               <div class="dropdown-divider"></div>
               <router-link class="dropdown-item" to="/signup">Signup</router-link>
               <router-link class="dropdown-item" to="/login">Login</router-link>
