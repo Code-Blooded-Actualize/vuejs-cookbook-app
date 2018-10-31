@@ -1,45 +1,101 @@
 <template>
   <div id="app">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="/#/">Josh's Cookbook</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <router-link class="dropdown-item" to="/">Home</router-link>
-              <router-link class="dropdown-item" to="/recipes/new">New Recipe</router-link>
-              <div class="dropdown-divider"></div>
-              <router-link class="dropdown-item" to="/signup">Signup</router-link>
-              <router-link class="dropdown-item" to="/login">Login</router-link>
-              <router-link class="dropdown-item" to="/logout">Logout</router-link>
+    <!-- Navigation Start -->
+    <nav id="navigation" class="navbar navbar-dark navbar-expand-lg bg-dark">
+        <div class="container">
+            <div class="navbar-header d-lg-none">
+                <a class="navbar-brand page-scroll" href="#page-top">BERG</a>
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-berg" aria-controls="navbar-berg" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
+            <!-- //.navbar-header -->
+            
+            <div class="navbar-collapse collapse justify-content-center" id="navbar-berg">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#profile">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#references">References</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- //.navbar-collapse -->
+        </div>
+        <!-- //.container -->
     </nav>
-    <div class="container">
+    <!-- //Navigation End -->
+
       <router-view/>
-    </div>
+
+    <!-- Footer End -->
+    <footer class="bg-gray-dark">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col text-center">
+                    <ul class="m-0 p-0">
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank" class="bg-gray-2 box-shadow-wide rounded text-white text-extra-large">
+                                <i class="fa fa-facebook ease"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank" class="bg-gray-2 box-shadow-wide rounded text-white text-extra-large">
+                                <i class="fa fa-twitter ease"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank" class="bg-gray-2 box-shadow-wide rounded text-white text-extra-large">
+                                <i class="fa fa-linkedin ease"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank" class="bg-gray-2 box-shadow-wide rounded text-white text-extra-large">
+                                <i class="fa fa-dribbble ease"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank" class="bg-gray-2 box-shadow-wide rounded text-white text-extra-large">
+                                <i class="fa fa-instagram ease"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank" class="bg-gray-2 box-shadow-wide rounded text-white text-extra-large">
+                                <i class="fa fa-pinterest ease"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                    <p class="m-0 mt-4 text-gray text-medium">&copy; 2017 Nick Berg. All rights reserved.</p>
+                </div>
+                <!-- //.col -->
+            </div>
+            <!-- //.row -->
+        </div>
+        <!-- //.container -->
+    </footer>
+    <!-- //Footer End -->
+
   </div>
 </template>
 

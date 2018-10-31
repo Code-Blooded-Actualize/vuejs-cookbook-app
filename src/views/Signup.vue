@@ -52,7 +52,7 @@ export default {
         password_confirmation: this.passwordConfirmation
       };
       axios
-        .post("http://localhost:3000/api/users", params)
+        .post("/api/users", params)
         .then(response => {
           this.$router.push("/login");
         })

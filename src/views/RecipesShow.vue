@@ -41,7 +41,7 @@ export default {
   },
   created: function() {
     axios
-    .get("http://localhost:3000/api/recipes/" + this.$route.params.id)
+    .get("/api/recipes/" + this.$route.params.id)
     .then(response => {
       this.recipe = response.data;
     });
