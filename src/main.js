@@ -4,7 +4,7 @@ import router from './router';
 import axios from "axios";
 import Vue2Filters from 'vue2-filters';
 
-axios.defaults.baseURL = process.env.NODE_ENV === "development" ? "http://localhost:3000" : "https://quiet-falls-95514.herokuapp.com/";
+axios.defaults.baseURL = process.env.NODE_ENV === "development" ? "http://localhost:3000" : "https://quiet-falls-95514.herokuapp.com";
 
 Vue.use(Vue2Filters);
 
